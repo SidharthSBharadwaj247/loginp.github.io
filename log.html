@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+</head>
+<body class="bg-blue-300"> 
+    <div class=" grid grid-cols-4">
+        <div class="md:col-span-1">
+            <svg id="burger"  class="pl-3 h-6 cursor-pointer md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            <div id="menu" class="hidden md:block bg-white md:bg-blue-300 w-full">
+                <ul class=" md:flex justify-start pr-3">
+                    <li class="px-3 py-3 hover:bg-slate-200"><a href="#">Home</a></li>
+                    <li class="px-3 py-3 hover:bg-slate-200"><a href="#">About</a></li>
+                    <li class="px-3 py-3 hover:bg-slate-200"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="justify-start h-screen md:col-span-2 md:items-center relative">
+            <div class="  absolute justify-center top-24 e">
+                <form class="absolute" action="https://tailwindcss.com/docs/content-configuration#class-detection-in-depth">
+                    <div class="m-auto bg-white h-96 w-96 p-5  shadow rounded relative right-0.5 left-0.5"> 
+                        <h2 class=" text-center font-semibold text-3xl ">Login page</h2>
+                        <div class="pt-5">
+                            <label  for="username">Username</label>
+                        <input  type="text" class="block text-base mb-2 border w-full" placeholder="Username">
+                        </div>
+                        <div class="pt-5">
+                            <label  for="Password">Password</label>
+                        <input  type="text" class="block text-base mb-2 border w-full " placeholder="Password" >
+                        </div>
+                        <div class="pt-5 justify-start">
+                        Remember me :<input class="" type="checkbox" name="" id="">
+                        
+                        </div>
+                        <div class="pt-5 pb-5">
+                            <a href="#">Forgot Password ?</a>
+                        </div>
+                        <div class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-24 absolute bottom-4 left-32">
+                            <input class="justify-center" type="submit" value="Submit">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+             
+            </div>
+        </div>
+        
+        
+        
+       
+    </div>
+    
+    
+</body>
+<script src="script.js"></script>
+</html>
